@@ -7,10 +7,11 @@ use Illuminate\Http\Response;
 use App\Traits\ApiResponser;
 use App\Dispensador;
 
+
 class DispensadorController extends Controller
 {
 
-    use ApiResponser;
+    use  ApiResponser;
 
     /**
      * Create a new controller instance.

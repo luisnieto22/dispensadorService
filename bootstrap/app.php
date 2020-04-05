@@ -27,8 +27,6 @@ $app->withFacades();
 
 $app->withEloquent();
 
-$app->configure('services');
-
 $app->configure('auth');
 
 /*
@@ -117,5 +115,6 @@ $app->router->group([
 ], function ($router) {
     require __DIR__.'/../routes/web.php';
 });
+
 
 return $app;
