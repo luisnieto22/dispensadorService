@@ -11,6 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+$router->get('/dispensadores', 'DispensadorController@index');
+$router->post('/dispensadores', 'DispensadorController@store');
+$router->get('/dispensadores/{author}', 'DispensadorController@show');
+$router->put('/dispensadores/{author}', 'DispensadorController@update');
+$router->patch('/dispensadores/{author}', 'DispensadorController@update');
+$router->delete('/dispensadores/{author}', 'DispensadorController@destroy');

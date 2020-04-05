@@ -20,7 +20,7 @@ $factory->define(Dispensador::class, function (Faker $faker) {
     return [
         'id' => $faker->numberBetween(0, 20),
         'name' => $faker->text,
-        'description'=> $faker->setence(4),
+        'description'=> $faker->sentence(4),
         'times'=> $faker->numberBetween(0,50)
     ];
 });
